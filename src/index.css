@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-heading: "Outfit", ui-sans-serif, system-ui, sans-serif;
+  
+  --color-acai-500: #7e22ce;
+  --color-acai-600: #6b21a8;
+  --color-acai-700: #581c87;
+  --color-acai-900: #3b0764;
+  --color-wapp: #25D366;
+  --color-wapp-hover: #1EAB53;
+  --color-ifood: #EA1D2C;
+  --color-ifood-hover: #C81524;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply font-sans bg-gray-50 text-gray-900 antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @apply font-heading tracking-tight;
+}
+
+/* Premium image hover classes */
+.img-hover-zoom {
+  @apply transition-transform duration-500 hover:scale-105 cursor-pointer;
+}
